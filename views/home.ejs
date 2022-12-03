@@ -16,10 +16,16 @@
             
     <p> <%= post.content.substring(0,30) + " ..." %>
     </p>
+
     <a href="/posts/<%= post._id %>">Read More</a>
+    <p class="text-muted">published at: <%= post.postedAt %> </p>
+
+    <a href="/update/<%= post._id %>">Update</a>
+
 
 </div>
     
     </div>
-    <%  }) %>
+<%  }) %>
+
 </div>
